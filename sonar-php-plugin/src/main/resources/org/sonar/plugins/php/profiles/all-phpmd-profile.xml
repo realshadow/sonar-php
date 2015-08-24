@@ -102,9 +102,5 @@
       <repositoryKey>phppmd_rules</repositoryKey>
       <key><![CDATA[Unused Code Rules/UnusedPrivateMethod]]></key>
     </rule>
-    <rule>
-      <repositoryKey>phppmd_rules</repositoryKey>
-      <key><![CDATA[Unused Code Rules/UnusedPrivateMethod]]></key>
-    </rule>
   </rules>
 </profile>

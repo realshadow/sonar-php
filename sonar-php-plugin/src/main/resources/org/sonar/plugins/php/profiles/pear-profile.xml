@@ -77,10 +77,6 @@
       <repositoryKey>phppmd_rules</repositoryKey>
       <key><![CDATA[Unused Code Rules/UnusedPrivateMethod]]></key>
     </rule>
-    <rule>
-      <repositoryKey>phppmd_rules</repositoryKey>
-      <key><![CDATA[Unused Code Rules/UnusedPrivateMethod]]></key>
-    </rule>
 
     <!-- PHP CodeSniffer rules -->
     <rule>
@@ -222,10 +218,6 @@
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>PEAR.Commenting.FileComment.InvalidCopyright</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>PEAR.Commenting.FileComment.EmptyCopyright</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
@@ -430,10 +422,6 @@
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>PEAR.NamingConventions.ValidClassName.StartWithCaptial</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>PEAR.NamingConventions.ValidClassName.Invalid</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>

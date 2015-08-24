@@ -215,12 +215,6 @@
     <category name="Maintainability" />
     <name>OpeningFunctionBraceKernighanRitchieSpaceBeforeBrace</name>
     <configKey>rulesets/OpeningFunctionBraceKernighanRitchie</configKey>
-    <description><![CDATA[Expected 1 space between the closing parenthesis and the opening brace; found %s]]></description>
-  </rule>
-  <rule key="Generic.Functions.OpeningFunctionBraceKernighanRitchie.SpaceBeforeBrace" priority="MAJOR">
-    <category name="Maintainability" />
-    <name>OpeningFunctionBraceKernighanRitchieSpaceBeforeBrace</name>
-    <configKey>rulesets/OpeningFunctionBraceKernighanRitchie</configKey>
     <description><![CDATA[Expected a single space character between closing parenthesis and opening brace; found %s]]></description>
   </rule>
   <rule key="Generic.Metrics.CyclomaticComplexity.MaxExceeded" priority="MAJOR">
@@ -402,12 +396,6 @@
     <name>DisallowSelfActionsFound</name>
     <configKey>rulesets/DisallowSelfActions</configKey>
     <description><![CDATA[Static calls to public methods in Action classes must not use the self keyword; use %s::%s() instead]]></description>
-  </rule>
-  <rule key="MySource.Channels.IncludeSystem.NotIncludedCall" priority="MAJOR">
-    <category name="Maintainability" />
-    <name>IncludeSystemNotIncludedCall</name>
-    <configKey>rulesets/IncludeSystem</configKey>
-    <description><![CDATA[Static method called on non-included class or system "%s"; include system with Channels::includeSystem() or include class with require_once]]></description>
   </rule>
   <rule key="MySource.Channels.IncludeSystem.NotIncludedExtends" priority="MAJOR">
     <category name="Maintainability" />
@@ -798,12 +786,6 @@
     <configKey>rulesets/FileComment</configKey>
     <description><![CDATA[@copyright tag must contain a year and the name of the copyright holder]]></description>
   </rule>
-  <rule key="PEAR.Commenting.FileComment.EmptyCopyright" priority="MAJOR">
-    <category name="Maintainability" />
-    <name>FileCommentEmptyCopyright</name>
-    <configKey>rulesets/FileComment</configKey>
-    <description><![CDATA[@copyright tag must contain a year and the name of the copyright holder]]></description>
-  </rule>
   <rule key="PEAR.Commenting.FileComment.EmptyLicense" priority="MAJOR">
     <category name="Maintainability" />
     <name>FileCommentEmptyLicense</name>
@@ -1132,12 +1114,6 @@
     <category name="Maintainability" />
     <name>ValidClassNameInvalid</name>
     <configKey>rulesets/ValidClassName</configKey>
-    <description><![CDATA[%s name is not valid]]></description>
-  </rule>
-  <rule key="PEAR.NamingConventions.ValidClassName.Invalid" priority="MAJOR">
-    <category name="Maintainability" />
-    <name>ValidClassNameInvalid</name>
-    <configKey>rulesets/ValidClassName</configKey>
     <description><![CDATA[%s name is not valid; consider %s instead]]></description>
   </rule>
   <rule key="PEAR.NamingConventions.ValidFunctionName.MethodDoubleUnderscore" priority="MAJOR">
@@ -1320,12 +1296,6 @@
     <configKey>rulesets/ArrayDeclaration</configKey>
     <description><![CDATA[Expected 1 space between comma and "%s"; %s found]]></description>
   </rule>
-  <rule key="Squiz.Arrays.ArrayDeclaration.SpaceBeforeComma" priority="MAJOR">
-    <category name="Maintainability" />
-    <name>ArrayDeclarationSpaceBeforeComma</name>
-    <configKey>rulesets/ArrayDeclaration</configKey>
-    <description><![CDATA[Expected 0 spaces between "%s" and comma; %s found]]></description>
-  </rule>
   <rule key="Squiz.Arrays.ArrayDeclaration.CloseBraceNewLine" priority="MAJOR">
     <category name="Maintainability" />
     <name>ArrayDeclarationCloseBraceNewLine</name>
@@ -1398,23 +1368,11 @@
     <configKey>rulesets/ArrayDeclaration</configKey>
     <description><![CDATA[Array double arrow not aligned correctly; expected %s space(s) but found %s]]></description>
   </rule>
-  <rule key="Squiz.Arrays.ArrayDeclaration.ValueNotAligned" priority="MAJOR">
-    <category name="Maintainability" />
-    <name>ArrayDeclarationValueNotAligned</name>
-    <configKey>rulesets/ArrayDeclaration</configKey>
-    <description><![CDATA[Array value not aligned correctly; expected %s space(s) but found %s]]></description>
-  </rule>
   <rule key="Squiz.Arrays.ArrayDeclaration.NoComma" priority="MAJOR">
     <category name="Maintainability" />
     <name>ArrayDeclarationNoComma</name>
     <configKey>rulesets/ArrayDeclaration</configKey>
     <description><![CDATA[Each line in an array declaration must end in a comma]]></description>
-  </rule>
-  <rule key="Squiz.Arrays.ArrayDeclaration.SpaceBeforeComma" priority="MAJOR">
-    <category name="Maintainability" />
-    <name>ArrayDeclarationSpaceBeforeComma</name>
-    <configKey>rulesets/ArrayDeclaration</configKey>
-    <description><![CDATA[Expected 0 spaces between "%s" and comma; %s found]]></description>
   </rule>
   <rule key="Squiz.Classes.ClassDeclaration.MultipleClasses" priority="MAJOR">
     <category name="Maintainability" />
@@ -2634,12 +2592,6 @@
     <configKey>rulesets/SwitchDeclaration</configKey>
     <description><![CDATA[There must be no space before the colon in a CASE statement]]></description>
   </rule>
-  <rule key="Squiz.ControlStructures.SwitchDeclaration.BreakIndent" priority="MAJOR">
-    <category name="Maintainability" />
-    <name>SwitchDeclarationBreakIndent</name>
-    <configKey>rulesets/SwitchDeclaration</configKey>
-    <description><![CDATA[BREAK statement must be indented 4 spaces from SWITCH keyword]]></description>
-  </rule>
   <rule key="Squiz.ControlStructures.SwitchDeclaration.EmptyCase" priority="MAJOR">
     <category name="Maintainability" />
     <name>SwitchDeclarationEmptyCase</name>
@@ -2657,12 +2609,6 @@
     <name>SwitchDeclarationSpacingAfterBreak</name>
     <configKey>rulesets/SwitchDeclaration</configKey>
     <description><![CDATA[BREAK statements must be followed by a single blank line]]></description>
-  </rule>
-  <rule key="Squiz.ControlStructures.SwitchDeclaration.SpacingAfterCase" priority="MAJOR">
-    <category name="Maintainability" />
-    <name>SwitchDeclarationSpacingAfterCase</name>
-    <configKey>rulesets/SwitchDeclaration</configKey>
-    <description><![CDATA[Blank lines are not allowed after CASE statements]]></description>
   </rule>
   <rule key="Squiz.ControlStructures.SwitchDeclaration.DefaultNotLower" priority="MAJOR">
     <category name="Maintainability" />
@@ -2856,12 +2802,6 @@
     <configKey>rulesets/MissingColon</configKey>
     <description><![CDATA[No style definition found on line; check for missing colon]]></description>
   </rule>
-  <rule key="Squiz.CSS.Opacity.Invalid" priority="MAJOR">
-    <category name="Maintainability" />
-    <name>OpacityInvalid</name>
-    <configKey>rulesets/Opacity</configKey>
-    <description><![CDATA[Opacity values must be between 0 and 1]]></description>
-  </rule>
   <rule key="Squiz.CSS.Opacity.SpacingAfterPoint" priority="MAJOR">
     <category name="Maintainability" />
     <name>OpacitySpacingAfterPoint</name>
@@ -2922,24 +2862,6 @@
     <configKey>rulesets/OperatorBracket</configKey>
     <description><![CDATA[Arithmetic operation must be bracketed]]></description>
   </rule>
-  <rule key="Squiz.Formatting.OperatorBracket.MissingBrackets" priority="MAJOR">
-    <category name="Maintainability" />
-    <name>OperatorBracketMissingBrackets</name>
-    <configKey>rulesets/OperatorBracket</configKey>
-    <description><![CDATA[Arithmetic operation must be bracketed]]></description>
-  </rule>
-  <rule key="Squiz.Formatting.OperatorBracket.MissingBrackets" priority="MAJOR">
-    <category name="Maintainability" />
-    <name>OperatorBracketMissingBrackets</name>
-    <configKey>rulesets/OperatorBracket</configKey>
-    <description><![CDATA[Arithmetic operation must be bracketed]]></description>
-  </rule>
-  <rule key="Squiz.Formatting.OperatorBracket.MissingBrackets" priority="MAJOR">
-    <category name="Maintainability" />
-    <name>OperatorBracketMissingBrackets</name>
-    <configKey>rulesets/OperatorBracket</configKey>
-    <description><![CDATA[Arithmetic operation must be bracketed]]></description>
-  </rule>
   <rule key="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpaceBeforeEquals" priority="MAJOR">
     <category name="Maintainability" />
     <name>FunctionDeclarationArgumentSpacingSpaceBeforeEquals</name>
@@ -2957,12 +2879,6 @@
     <name>FunctionDeclarationArgumentSpacingSpaceBeforeComma</name>
     <configKey>rulesets/FunctionDeclarationArgumentSpacing</configKey>
     <description><![CDATA[Expected 0 spaces between argument "%s" and comma; %s found]]></description>
-  </rule>
-  <rule key="Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingAfterHint" priority="MAJOR">
-    <category name="Maintainability" />
-    <name>FunctionDeclarationArgumentSpacingSpacingAfterHint</name>
-    <configKey>rulesets/FunctionDeclarationArgumentSpacing</configKey>
-    <description><![CDATA[Expected 1 space between type hint and argument "%s"; %s found]]></description>
   </rule>
   <rule key="Squiz.Functions.FunctionDeclarationArgumentSpacing.NoSapceBeforeHint" priority="MAJOR">
     <category name="Maintainability" />
@@ -3078,12 +2994,6 @@
     <configKey>rulesets/ValidVariableName</configKey>
     <description><![CDATA[Variable "%s" is not in valid camel caps format]]></description>
   </rule>
-  <rule key="Squiz.NamingConventions.ValidVariableName.NotCamelCaps" priority="MAJOR">
-    <category name="Maintainability" />
-    <name>ValidVariableNameNotCamelCaps</name>
-    <configKey>rulesets/ValidVariableName</configKey>
-    <description><![CDATA[Variable "%s" is not in valid camel caps format]]></description>
-  </rule>
   <rule key="Squiz.NamingConventions.ValidVariableName.PublicHasUnderscore" priority="MAJOR">
     <category name="Maintainability" />
     <name>ValidVariableNamePublicHasUnderscore</name>
@@ -3131,12 +3041,6 @@
     <name>ComparisonOperatorUsageNotAllowed</name>
     <configKey>rulesets/ComparisonOperatorUsage</configKey>
     <description><![CDATA[Operator %s prohibited; use %s instead]]></description>
-  </rule>
-  <rule key="Squiz.Operators.ComparisonOperatorUsage.ImplicitTrue" priority="MAJOR">
-    <category name="Maintainability" />
-    <name>ComparisonOperatorUsageImplicitTrue</name>
-    <configKey>rulesets/ComparisonOperatorUsage</configKey>
-    <description><![CDATA[Implicit true comparisons prohibited; use === TRUE instead]]></description>
   </rule>
   <rule key="Squiz.Operators.ComparisonOperatorUsage.ImplicitTrue" priority="MAJOR">
     <category name="Maintainability" />
@@ -3234,12 +3138,6 @@
     <configKey>rulesets/EmbeddedPhp</configKey>
     <description><![CDATA[Closing PHP tag must be on a line by itself]]></description>
   </rule>
-  <rule key="Squiz.PHP.EmbeddedPhp.Empty" priority="MAJOR">
-    <category name="Maintainability" />
-    <name>EmbeddedPhpEmpty</name>
-    <configKey>rulesets/EmbeddedPhp</configKey>
-    <description><![CDATA[Empty embedded PHP tag found]]></description>
-  </rule>
   <rule key="Squiz.PHP.EmbeddedPhp.SpacingAfterOpen" priority="MAJOR">
     <category name="Maintainability" />
     <name>EmbeddedPhpSpacingAfterOpen</name>
@@ -3257,12 +3155,6 @@
     <name>EmbeddedPhpMultipleStatements</name>
     <configKey>rulesets/EmbeddedPhp</configKey>
     <description><![CDATA[Inline PHP statement must contain one statement per line; %s found]]></description>
-  </rule>
-  <rule key="Squiz.PHP.EmbeddedPhp.NoSpaceBeforeClose" priority="MAJOR">
-    <category name="Maintainability" />
-    <name>EmbeddedPhpNoSpaceBeforeClose</name>
-    <configKey>rulesets/EmbeddedPhp</configKey>
-    <description><![CDATA[Expected 1 space before closing PHP tag; 0 found]]></description>
   </rule>
   <rule key="Squiz.PHP.EmbeddedPhp.NoSpaceBeforeClose" priority="MAJOR">
     <category name="Maintainability" />
@@ -3611,12 +3503,6 @@
     <name>ClosingTagNotAllowed</name>
     <configKey>rulesets/ClosingTag</configKey>
     <description><![CDATA[A closing tag is not permitted at the end of a PHP file]]></description>
-  </rule>
-  <rule key="Zend.NamingConventions.ValidVariableName.NotCamelCaps" priority="MAJOR">
-    <category name="Maintainability" />
-    <name>ValidVariableNameNotCamelCaps</name>
-    <configKey>rulesets/ValidVariableName</configKey>
-    <description><![CDATA[Variable "%s" is not in valid camel caps format]]></description>
   </rule>
   <rule key="Zend.NamingConventions.ValidVariableName.NotCamelCaps" priority="MAJOR">
     <category name="Maintainability" />

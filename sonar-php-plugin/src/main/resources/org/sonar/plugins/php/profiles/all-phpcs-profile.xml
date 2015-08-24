@@ -113,10 +113,6 @@
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>Generic.Functions.OpeningFunctionBraceKernighanRitchie.SpaceBeforeBrace</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Generic.Metrics.CyclomaticComplexity.MaxExceeded</key>
     </rule>
     <rule>
@@ -134,10 +130,6 @@
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Generic.NamingConventions.UpperCaseConstantName.ClassConstantNotUpperCase</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>Generic.NamingConventions.UpperCaseConstantName.ConstantNotUpperCase</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
@@ -201,10 +193,6 @@
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>Generic.WhiteSpace.ScopeIndent.Incorrect</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>MySource.Channels.ChannelException.WrongExceptionType</key>
     </rule>
     <rule>
@@ -218,10 +206,6 @@
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>MySource.Channels.IncludeSystem.NotIncludedExtends</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>MySource.Channels.IncludeSystem.NotIncludedCall</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
@@ -453,10 +437,6 @@
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>PEAR.Commenting.FileComment.EmptyCopyright</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>PEAR.Commenting.FileComment.EmptyLicense</key>
     </rule>
     <rule>
@@ -661,10 +641,6 @@
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>PEAR.NamingConventions.ValidClassName.Invalid</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>PEAR.NamingConventions.ValidFunctionName.MethodDoubleUnderscore</key>
     </rule>
     <rule>
@@ -801,10 +777,6 @@
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>Squiz.Arrays.ArrayDeclaration.SpaceBeforeComma</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Squiz.Arrays.ArrayDeclaration.KeySpecified</key>
     </rule>
     <rule>
@@ -814,10 +786,6 @@
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Squiz.Arrays.ArrayDeclaration.NoCommaAfterLast</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>Squiz.Arrays.ArrayDeclaration.ValueNotAligned</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
@@ -842,10 +810,6 @@
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Squiz.Arrays.ArrayDeclaration.NoComma</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>Squiz.Arrays.ArrayDeclaration.SpaceBeforeComma</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
@@ -1653,10 +1617,6 @@
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>Squiz.ControlStructures.SwitchDeclaration.SpacingAfterCase</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Squiz.ControlStructures.SwitchDeclaration.SpaceBeforeColon</key>
     </rule>
     <rule>
@@ -1690,10 +1650,6 @@
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Squiz.ControlStructures.SwitchDeclaration.DefaultIndent</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>Squiz.ControlStructures.SwitchDeclaration.BreakIndent</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
@@ -1809,10 +1765,6 @@
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>Squiz.CSS.Opacity.Invalid</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Squiz.CSS.Opacity.SpacingAfterPoint</key>
     </rule>
     <rule>
@@ -1853,18 +1805,6 @@
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>Squiz.Formatting.OperatorBracket.MissingBrackets</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>Squiz.Formatting.OperatorBracket.MissingBrackets</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>Squiz.Formatting.OperatorBracket.MissingBrackets</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Squiz.Functions.FunctionDeclarationArgumentSpacing.SpaceBeforeEquals</key>
     </rule>
     <rule>
@@ -1874,10 +1814,6 @@
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Squiz.Functions.FunctionDeclarationArgumentSpacing.SpaceBeforeComma</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>Squiz.Functions.FunctionDeclarationArgumentSpacing.SpacingAfterHint</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
@@ -1957,10 +1893,6 @@
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>Squiz.NamingConventions.ValidVariableName.NotCamelCaps</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Squiz.NamingConventions.ValidVariableName.PublicHasUnderscore</key>
     </rule>
     <rule>
@@ -1990,10 +1922,6 @@
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Squiz.Operators.ComparisonOperatorUsage.NotAllowed</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>Squiz.Operators.ComparisonOperatorUsage.ImplicitTrue</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
@@ -2037,10 +1965,6 @@
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>Squiz.PHP.EmbeddedPhp.Empty</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Squiz.PHP.EmbeddedPhp.SpacingBefore</key>
     </rule>
     <rule>
@@ -2074,10 +1998,6 @@
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Squiz.PHP.EmbeddedPhp.MultipleStatements</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>Squiz.PHP.EmbeddedPhp.NoSpaceBeforeClose</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
@@ -2177,10 +2097,6 @@
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>Squiz.WhiteSpace.FunctionClosingBraceSpace.SpacingBeforeClose</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Squiz.WhiteSpace.FunctionOpeningBraceSpace.SpacingAfter</key>
     </rule>
     <rule>
@@ -2237,23 +2153,11 @@
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>Squiz.WhiteSpace.ObjectOperatorSpacing.After</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Squiz.WhiteSpace.OperatorSpacing.NoSpaceBeforeAmp</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>Squiz.WhiteSpace.OperatorSpacing.SpacingBeforeAmp</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Squiz.WhiteSpace.OperatorSpacing.NoSpaceAfterAmp</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>Squiz.WhiteSpace.OperatorSpacing.SpacingAfterAmp</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
@@ -2302,10 +2206,6 @@
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Zend.Files.ClosingTag.NotAllowed</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>Zend.NamingConventions.ValidVariableName.NotCamelCaps</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>

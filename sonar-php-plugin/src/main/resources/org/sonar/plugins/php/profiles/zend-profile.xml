@@ -77,19 +77,11 @@
       <repositoryKey>phppmd_rules</repositoryKey>
       <key><![CDATA[Unused Code Rules/UnusedPrivateMethod]]></key>
     </rule>
-    <rule>
-      <repositoryKey>phppmd_rules</repositoryKey>
-      <key><![CDATA[Unused Code Rules/UnusedPrivateMethod]]></key>
-    </rule>
 
     <!-- PHP CodeSniffer rules -->
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Zend.Files.ClosingTag.NotAllowed</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>Zend.NamingConventions.ValidVariableName.NotCamelCaps</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>

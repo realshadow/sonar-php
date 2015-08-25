@@ -28,9 +28,12 @@ import org.sonar.api.batch.Sensor;
 import org.sonar.api.batch.SensorContext;
 import org.sonar.api.profiles.RulesProfile;
 import org.sonar.api.resources.Project;
+import org.sonar.api.resources.ProjectFileSystem;
 import org.sonar.api.rules.Rule;
 import org.sonar.api.rules.RuleFinder;
 import org.sonar.api.rules.Violation;
+import org.sonar.api.scan.filesystem.FileQuery;
+import org.sonar.api.scan.filesystem.ModuleFileSystem;
 import org.sonar.plugins.php.api.PhpConstants;
 
 import java.io.File;
@@ -104,18 +107,22 @@ public class PhpmdSensor implements Sensor {
   /** The rule finder */
   private RuleFinder ruleFinder;
 
+  private final ProjectFileSystem filesystem;
+
   /**
    * /** Instantiates a new php pmd sensor.
    * 
    * @param rulesManager
    *          the rules manager
    */
-  public PhpmdSensor(PhpmdConfiguration conf, PhpmdExecutor executor, RulesProfile profile, RuleFinder ruleFinder) {
+  public PhpmdSensor(PhpmdConfiguration conf, PhpmdExecutor executor, RulesProfile profile, RuleFinder ruleFinder,
+                     ProjectFileSystem filesystem) {
     super();
     this.configuration = conf;
     this.profile = profile;
     this.executor = executor;
     this.ruleFinder = ruleFinder;
+    this.filesystem = filesystem;
   }
 
   /**
@@ -148,10 +155,9 @@ public class PhpmdSensor implements Sensor {
    * {@inheritDoc}
    */
   public boolean shouldExecuteOnProject(Project project) {
-    return PhpConstants.LANGUAGE_KEY.equals(project.getLanguageKey())
-      && !configuration.isSkip()
-      && !project.getFileSystem().mainFiles(PhpConstants.LANGUAGE_KEY).isEmpty()
-      && !profile.getActiveRulesByRepository(PHPMD_REPOSITORY_KEY).isEmpty();
+    return !configuration.isSkip()
+            && !filesystem.mainFiles(PhpConstants.LANGUAGE_KEY).isEmpty()
+            && !profile.getActiveRulesByRepository(PHPMD_REPOSITORY_KEY).isEmpty();
   }
 
   /**

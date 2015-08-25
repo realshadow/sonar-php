@@ -42,7 +42,7 @@ public class PhpCodesnifferConfigurationTest {
 
   @Before
   public void init() throws Exception {
-    settings = Settings.createForComponent(new PhpCodeSnifferSensor(null, null, null, null, null));
+    settings = Settings.createForComponent(new PhpCodeSnifferSensor(null, null, null, null, null, null));
     phpConfig = createPhpCodesnifferConfiguration(settings);
   }
 

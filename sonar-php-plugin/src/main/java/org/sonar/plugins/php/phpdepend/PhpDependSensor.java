@@ -27,6 +27,9 @@ import org.sonar.api.PropertyType;
 import org.sonar.api.batch.Sensor;
 import org.sonar.api.batch.SensorContext;
 import org.sonar.api.resources.Project;
+import org.sonar.api.resources.ProjectFileSystem;
+import org.sonar.api.scan.filesystem.FileQuery;
+import org.sonar.api.scan.filesystem.ModuleFileSystem;
 import org.sonar.plugins.php.api.PhpConstants;
 import org.sonar.plugins.php.core.PhpPluginExecutionException;
 
@@ -104,17 +107,20 @@ public class PhpDependSensor implements Sensor {
   private PhpDependConfiguration configuration;
   private PhpDependExecutor executor;
   private PhpDependParserSelector parserSelector;
+  private final ProjectFileSystem filesystem;
 
   /**
    * @param config
    * @param executor
    * @param parserSelector
    */
-  public PhpDependSensor(PhpDependConfiguration config, PhpDependExecutor executor, PhpDependParserSelector parserSelector) {
+  public PhpDependSensor(PhpDependConfiguration config, PhpDependExecutor executor,
+                         PhpDependParserSelector parserSelector, ProjectFileSystem filesystem) {
     super();
     this.configuration = config;
     this.executor = executor;
     this.parserSelector = parserSelector;
+    this.filesystem = filesystem;
   }
 
   /**
@@ -138,9 +144,8 @@ public class PhpDependSensor implements Sensor {
    * {@inheritDoc}
    */
   public boolean shouldExecuteOnProject(Project project) {
-    return PhpConstants.LANGUAGE_KEY.equals(project.getLanguageKey())
-      && !configuration.isSkip()
-      && !project.getFileSystem().mainFiles(PhpConstants.LANGUAGE_KEY).isEmpty();
+    return !configuration.isSkip()
+            && !filesystem.mainFiles(PhpConstants.LANGUAGE_KEY).isEmpty();
   }
 
   /**

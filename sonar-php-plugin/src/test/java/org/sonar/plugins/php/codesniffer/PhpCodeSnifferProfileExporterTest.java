@@ -24,6 +24,7 @@ import org.junit.Test;
 import org.sonar.api.config.Settings;
 import org.sonar.api.platform.ServerFileSystem;
 import org.sonar.api.profiles.RulesProfile;
+import org.sonar.api.rule.RuleKey;
 import org.sonar.api.rules.Rule;
 import org.sonar.api.rules.RuleFinder;
 import org.sonar.api.rules.RuleQuery;
@@ -116,6 +117,13 @@ public class PhpCodeSnifferProfileExporterTest {
 
     public Collection<Rule> findAll(RuleQuery query) {
       return rules;
+    }
+
+    public Rule findByKey(RuleKey key) {
+      Map<String, Rule> rulesByKey = getRulesMap();
+      Rule rule = rulesByKey.get(key);
+      rule.setRepositoryKey(PhpCodeSnifferRuleRepository.PHPCS_REPOSITORY_KEY);
+      return rule;
     }
 
     public Rule find(RuleQuery query) {

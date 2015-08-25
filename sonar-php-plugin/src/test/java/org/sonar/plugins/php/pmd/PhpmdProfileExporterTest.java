@@ -24,11 +24,13 @@ import org.junit.Test;
 import org.sonar.api.config.Settings;
 import org.sonar.api.platform.ServerFileSystem;
 import org.sonar.api.profiles.RulesProfile;
+import org.sonar.api.rule.RuleKey;
 import org.sonar.api.rules.Rule;
 import org.sonar.api.rules.RuleFinder;
 import org.sonar.api.rules.RuleQuery;
 import org.sonar.api.rules.XMLRuleParser;
 import org.sonar.api.utils.ValidationMessages;
+import org.sonar.plugins.php.codesniffer.PhpCodeSnifferRuleRepository;
 import org.sonar.plugins.php.pmd.xml.PmdProperty;
 import org.sonar.plugins.php.pmd.xml.PmdRule;
 import org.sonar.test.TestUtils;
@@ -40,6 +42,7 @@ import java.io.StringReader;
 import java.io.StringWriter;
 import java.util.Collection;
 import java.util.List;
+import java.util.Map;
 
 import static org.fest.assertions.Assertions.assertThat;
 import static org.hamcrest.Matchers.is;
@@ -128,6 +131,10 @@ public class PhpmdProfileExporterTest {
 
     public PhpmdRuleFinder(List<Rule> rules) {
       this.rules = rules;
+    }
+
+    public Rule findByKey(RuleKey key) {
+      throw new UnsupportedOperationException();
     }
 
     public Rule findByKey(String repositoryKey, String key) {

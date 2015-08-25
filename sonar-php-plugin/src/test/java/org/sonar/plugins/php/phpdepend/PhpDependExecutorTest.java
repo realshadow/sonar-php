@@ -44,7 +44,7 @@ public class PhpDependExecutorTest {
 
   @Before
   public void init() throws Exception {
-    settings = Settings.createForComponent(new PhpDependSensor(null, null, null));
+    settings = Settings.createForComponent(new PhpDependSensor(null, null, null, null));
     Project project = MockUtils.createMockProject();
     PhpDependConfiguration configuration = new PhpDependConfiguration(settings, project.getFileSystem());
     executor = new PhpDependExecutor(new Php(), configuration);

@@ -45,7 +45,7 @@ public class PhpDependConfigurationTest {
 
   @Before
   public void init() throws Exception {
-    settings = Settings.createForComponent(new PhpDependSensor(null, null, null));
+    settings = Settings.createForComponent(new PhpDependSensor(null, null, null, null));
     phpConfig = new PhpDependConfiguration(settings, MockUtils.createMockProject().getFileSystem());
   }
 

@@ -19,6 +19,7 @@
  */
 package org.sonar.plugins.php.core;
 
+import com.google.common.annotations.VisibleForTesting;
 import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,10 +28,10 @@ import org.sonar.api.batch.Sensor;
 import org.sonar.api.batch.SensorContext;
 import org.sonar.api.checks.NoSonarFilter;
 import org.sonar.api.measures.CoreMetrics;
-import org.sonar.api.resources.InputFile;
 import org.sonar.api.resources.Project;
-import org.sonar.api.resources.ProjectFileSystem;
+import org.sonar.api.scan.filesystem.ModuleFileSystem;
 import org.sonar.api.utils.SonarException;
+import org.sonar.api.scan.filesystem.FileQuery;
 import org.sonar.plugins.php.api.PhpConstants;
 import org.sonar.squid.measures.Metric;
 import org.sonar.squid.recognizer.CamelCaseDetector;
@@ -57,28 +58,23 @@ public class NoSonarAndCommentedOutLocSensor implements Sensor {
 
   private static final Logger LOG = LoggerFactory.getLogger(NoSonarAndCommentedOutLocSensor.class);
 
-  /**
-   * 
-   */
   private final NoSonarFilter filter;
+  private final ModuleFileSystem filesystem;
 
-  /**
-   * @param noSonarFilter
-   */
-  public NoSonarAndCommentedOutLocSensor(NoSonarFilter noSonarFilter) {
+  public NoSonarAndCommentedOutLocSensor(ModuleFileSystem filesystem, NoSonarFilter noSonarFilter) {
     this.filter = noSonarFilter;
+    this.filesystem = filesystem;
   }
 
   /**
    * @see org.sonar.api.batch.Sensor#analyse(org.sonar.api.resources.Project, org.sonar.api.batch.SensorContext)
    */
   public void analyse(Project project, SensorContext context) {
-    ProjectFileSystem fileSystem = project.getFileSystem();
-    List<InputFile> sourceFiles = fileSystem.mainFiles(PhpConstants.LANGUAGE_KEY);
-    for (InputFile file : sourceFiles) {
-      org.sonar.api.resources.File phpFile = org.sonar.api.resources.File.fromIOFile(file.getFile(), project);
+    List<File> sourceFiles = filesystem.files(FileQuery.onSource().onLanguage(PhpConstants.LANGUAGE_KEY));
+    for (File file : sourceFiles) {
+      org.sonar.api.resources.File phpFile = getSonarResource(project, file);
       if (phpFile != null) {
-        Source source = analyseSourceCode(file.getFile());
+        Source source = analyseSourceCode(file);
         if (source != null) {
           filter.addResource(phpFile, source.getNoSonarTagLines());
           double measure = source.getMeasure(Metric.COMMENTED_OUT_CODE_LINES);
@@ -86,6 +82,11 @@ public class NoSonarAndCommentedOutLocSensor implements Sensor {
         }
       }
     }
+  }
+
+  @VisibleForTesting
+  org.sonar.api.resources.File getSonarResource(Project project, File file) {
+    return org.sonar.api.resources.File.fromIOFile(file, project);
   }
 
   protected static Source analyseSourceCode(File file) {
@@ -109,7 +110,7 @@ public class NoSonarAndCommentedOutLocSensor implements Sensor {
    * @see org.sonar.api.batch.CheckProject#shouldExecuteOnProject(org.sonar.api.resources.Project)
    */
   public boolean shouldExecuteOnProject(Project project) {
-    return PhpConstants.LANGUAGE_KEY.equals(project.getLanguageKey());
+    return !filesystem.files(FileQuery.onSource().onLanguage(PhpConstants.LANGUAGE_KEY)).isEmpty();
   }
 
   /**

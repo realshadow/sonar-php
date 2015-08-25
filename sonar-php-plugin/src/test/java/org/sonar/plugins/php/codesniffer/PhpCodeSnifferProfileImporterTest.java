@@ -23,6 +23,7 @@ import org.junit.Test;
 import org.sonar.api.config.Settings;
 import org.sonar.api.platform.ServerFileSystem;
 import org.sonar.api.profiles.RulesProfile;
+import org.sonar.api.rule.RuleKey;
 import org.sonar.api.rules.ActiveRule;
 import org.sonar.api.rules.Rule;
 import org.sonar.api.rules.RuleFinder;
@@ -137,6 +138,10 @@ public class PhpCodeSnifferProfileImporterTest {
 
     public MockPhpCodeSnifferRuleFinder(List<Rule> rules) {
       this.rules = rules;
+    }
+
+    public Rule findByKey(RuleKey key) {
+      return rulesByKey.get(key);
     }
 
     public Rule findByKey(String repositoryKey, String key) {

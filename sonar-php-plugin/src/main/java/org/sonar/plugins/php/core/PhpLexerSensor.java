@@ -128,7 +128,9 @@ public class PhpLexerSensor implements Sensor {
    * @see org.sonar.api.batch.CheckProject#shouldExecuteOnProject(org.sonar.api.resources.Project)
    */
   public boolean shouldExecuteOnProject(Project project) {
-    return PhpConstants.LANGUAGE_KEY.equals(project.getLanguageKey());
+    ProjectFileSystem filesystem = project.getFileSystem();
+
+    return !filesystem.mainFiles(PhpConstants.LANGUAGE_KEY).isEmpty();
   }
 
   /**

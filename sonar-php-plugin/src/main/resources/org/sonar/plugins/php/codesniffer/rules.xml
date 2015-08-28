@@ -12,6 +12,12 @@
     <configKey>rulesets/EmptyStatement</configKey>
     <description><![CDATA[Empty %s statement detected]]></description>
   </rule>
+  <rule key="CFH.CodeAnalysis.EmptyStatement.NotAllowed" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>EmptyStatementNotAllowed</name>
+    <configKey>rulesets/EmptyStatement</configKey>
+    <description><![CDATA[Empty %s statement detected]]></description>
+  </rule>
   <rule key="Generic.CodeAnalysis.EmptyStatement.NotAllowedWarning" priority="MINOR">
     <category name="Maintainability" />
     <name>EmptyStatementNotAllowedWarning</name>
@@ -594,13 +600,37 @@
     <configKey>rulesets/ClassCommentMissingTag</configKey>
     <description><![CDATA[Empty copyright comment in class]]></description>
   </rule>
-  <rule key="PEAR.Commenting.FunctionComment.ParamNameNoMatch" priority="MAJOR">
+  <rule key="CFH.Commenting.ClassComment.WrongStyle" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassCommentWrongStyle</name>
+    <configKey>rulesets/ClassComment</configKey>
+    <description><![CDATA[You must use "/**" style comments for a %s comment]]></description>
+  </rule>
+  <rule key="CFH.Commenting.ClassComment.TagIndent" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassCommentTagIndent</name>
+    <configKey>rulesets/ClassCommentTagIndent</configKey>
+    <description><![CDATA[Incorrect tag indentation in class comment]]></description>
+  </rule>
+  <rule key="CFH.Commenting.ClassComment.MissingTag" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassCommentMissingTag</name>
+    <configKey>rulesets/ClassCommentMissingTag</configKey>
+    <description><![CDATA[Missing %s doc comment in class]]></description>
+  </rule>
+  <rule key="CFH.Commenting.ClassComment.EmptyCopyright" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassCommentEmptyCopyright</name>
+    <configKey>rulesets/ClassCommentMissingTag</configKey>
+    <description><![CDATA[Empty copyright comment in class]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.ParamNameNoMatch" priority="MAJOR">
     <category name="Maintainability" />
     <name>FunctionCommentParamNameNoMatch</name>
     <configKey>rulesets/FunctionCommentParamNameNoMatch</configKey>
     <description><![CDATA[Param name does not match function comment]]></description>
   </rule>
-  <rule key="PEAR.Commenting.FunctionComment.Missing" priority="MAJOR">
+  <rule key="CFH.Commenting.FunctionComment.Missing" priority="MAJOR">
     <category name="Maintainability" />
     <name>FunctionCommentMissing</name>
     <configKey>rulesets/FunctionCommentMissing</configKey>
@@ -643,6 +673,48 @@
     <description><![CDATA[Content missing for @version tag in doc comment]]></description>
   </rule>
   <rule key="PEAR.Commenting.ClassComment.InvalidVersion" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassCommentInvalidVersion</name>
+    <configKey>rulesets/ClassComment</configKey>
+    <description><![CDATA[Invalid version "%s" in doc comment; consider "Release: <package_version>" instead]]></description>
+  </rule>
+  <rule key="CFH.Commenting.ClassComment.Missing" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassCommentMissing</name>
+    <configKey>rulesets/ClassComment</configKey>
+    <description><![CDATA[Missing %s doc comment]]></description>
+  </rule>
+  <rule key="CFH.Commenting.ClassComment.Empty" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassCommentEmpty</name>
+    <configKey>rulesets/ClassComment</configKey>
+    <description><![CDATA[Doc comment is empty for %s]]></description>
+  </rule>
+  <rule key="CFH.Commenting.ClassComment.SpacingBeforeShort" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassCommentSpacingBeforeShort</name>
+    <configKey>rulesets/ClassComment</configKey>
+    <description><![CDATA[Extra newline(s) found before %s comment short description]]></description>
+  </rule>
+  <rule key="CFH.Commenting.ClassComment.SpacingAfterShort" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassCommentSpacingAfterShort</name>
+    <configKey>rulesets/ClassComment</configKey>
+    <description><![CDATA[There must be exactly one blank line between descriptions in %s comments]]></description>
+  </rule>
+  <rule key="CFH.Commenting.ClassComment.SpacingBeforeTags" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassCommentSpacingBeforeTags</name>
+    <configKey>rulesets/ClassComment</configKey>
+    <description><![CDATA[There must be exactly one blank line before the tags in %s comments]]></description>
+  </rule>
+  <rule key="CFH.Commenting.ClassComment.EmptyVersion" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassCommentEmptyVersion</name>
+    <configKey>rulesets/ClassComment</configKey>
+    <description><![CDATA[Content missing for @version tag in doc comment]]></description>
+  </rule>
+  <rule key="CFH.Commenting.ClassComment.InvalidVersion" priority="MAJOR">
     <category name="Maintainability" />
     <name>ClassCommentInvalidVersion</name>
     <configKey>rulesets/ClassComment</configKey>
@@ -930,6 +1002,132 @@
     <configKey>rulesets/FunctionComment</configKey>
     <description><![CDATA[Doc comment for "%s" missing]]></description>
   </rule>
+  <rule key="CFH.Commenting.FunctionComment.WrongStyle" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCommentWrongStyle</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[You must use "/**" style comments for a function comment]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.Empty" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCommentEmpty</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[Function doc comment is empty]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.SpacingBeforeShort" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCommentSpacingBeforeShort</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[Extra newline(s) found before function comment short description]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.SpacingAfterShort" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCommentSpacingAfterShort</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[There must be exactly one blank line between descriptions in function comment]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.SpacingBeforeTags" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCommentSpacingBeforeTags</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[There must be exactly one blank line before the tags in function comment]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.EmptyThrows" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCommentEmptyThrows</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[@throws tag must contain the exception class name]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.MissingReturn" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCommentMissingReturn</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[Missing @return tag in function comment]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.EmptyReturn" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCommentEmptyReturn</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[@return tag is empty in function comment]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.SpacingAfterParams" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCommentSpacingAfterParams</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[Last parameter comment requires a blank newline after it]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.SpacingBeforeParams" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCommentSpacingBeforeParams</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[Parameters must appear immediately after the comment]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.SpacingBeforeParamType" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCommentSpacingBeforeParamType</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[Expected 1 space before variable type]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.ParameterNamesNotAligned" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCommentParameterNamesNotAligned</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[The variable names for parameters %s (%s) and %s (%s) do not align]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.ParameterCommentsNotAligned" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCommentParameterCommentsNotAligned</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[The comments for parameters %s (%s) and %s (%s) do not align]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.cod" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCommentcod</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[Doc comment for var %s does not match ]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.ExtraParamComment" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCommentExtraParamComment</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[Superfluous doc comment at position '.$po]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.MissingParamName" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCommentMissingParamName</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[Missing parameter name at position '.$po]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.MissingParamType" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCommentMissingParamType</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[Missing type at position '.$po]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.MissingParamComment" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCommentMissingParamComment</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[Missing comment for param "%s" at position %s]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.SpacingAfterLongType" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCommentSpacingAfterLongType</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[Expected 1 space after the longest type]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.SpacingAfterLongName" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCommentSpacingAfterLongName</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[Expected 1 space after the longest variable name]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.MissingParamTag" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCommentMissingParamTag</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[Doc comment for "%s" missing]]></description>
+  </rule>
   <rule key="PEAR.Commenting.InlineComment.WrongStyle" priority="MAJOR">
     <category name="Maintainability" />
     <name>InlineCommentWrongStyle</name>
@@ -1051,6 +1249,48 @@
     <description><![CDATA[Opening parenthesis of a multi-line function call must be the last content on the line]]></description>
   </rule>
   <rule key="PEAR.Functions.FunctionCallSignature.CloseBracketLine" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCallSignatureCloseBracketLine</name>
+    <configKey>rulesets/FunctionCallSignature</configKey>
+    <description><![CDATA[Closing parenthesis of a multi-line function call must be on a line by itself]]></description>
+  </rule>
+  <rule key="CFH.Functions.FunctionCallSignature.SpaceBeforeOpenBracket" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCallSignatureSpaceBeforeOpenBracket</name>
+    <configKey>rulesets/FunctionCallSignature</configKey>
+    <description><![CDATA[Space before opening parenthesis of function call prohibited]]></description>
+  </rule>
+  <rule key="CFH.Functions.FunctionCallSignature.SpaceAfterCloseBracket" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCallSignatureSpaceAfterCloseBracket</name>
+    <configKey>rulesets/FunctionCallSignature</configKey>
+    <description><![CDATA[Space after closing parenthesis of function call prohibited]]></description>
+  </rule>
+  <rule key="CFH.Functions.FunctionCallSignature.SpaceAfterOpenBracket" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCallSignatureSpaceAfterOpenBracket</name>
+    <configKey>rulesets/FunctionCallSignature</configKey>
+    <description><![CDATA[Space after opening parenthesis of function call prohibited]]></description>
+  </rule>
+  <rule key="CFH.Functions.FunctionCallSignature.SpaceBeforeCloseBracket" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCallSignatureSpaceBeforeCloseBracket</name>
+    <configKey>rulesets/FunctionCallSignature</configKey>
+    <description><![CDATA[Space before closing parenthesis of function call prohibited]]></description>
+  </rule>
+  <rule key="CFH.Functions.FunctionCallSignature.Indent" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCallSignatureIndent</name>
+    <configKey>rulesets/FunctionCallSignature</configKey>
+    <description><![CDATA[Multi-line function call not indented correctly; expected %s spaces but found %s]]></description>
+  </rule>
+  <rule key="CFH.Functions.FunctionCallSignature.ContentAfterOpenBracket" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>FunctionCallSignatureContentAfterOpenBracket</name>
+    <configKey>rulesets/FunctionCallSignature</configKey>
+    <description><![CDATA[Opening parenthesis of a multi-line function call must be the last content on the line]]></description>
+  </rule>
+  <rule key="CFH.Functions.FunctionCallSignature.CloseBracketLine" priority="MAJOR">
     <category name="Maintainability" />
     <name>FunctionCallSignatureCloseBracketLine</name>
     <configKey>rulesets/FunctionCallSignature</configKey>
@@ -1459,6 +1699,96 @@
     <description><![CDATA[Expected 1 space before "%s"; %s found]]></description>
   </rule>
   <rule key="Squiz.Classes.ClassDeclaration.SpaceBeforeComma" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassDeclarationSpaceBeforeComma</name>
+    <configKey>rulesets/ClassDeclaration</configKey>
+    <description><![CDATA[Expected 0 spaces between "%s" and comma; $%s found]]></description>
+  </rule>
+  <rule key="CFH.Classes.ClassDeclaration.MultipleClasses" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassDeclarationMultipleClasses</name>
+    <configKey>rulesets/ClassDeclaration</configKey>
+    <description><![CDATA[Only one interface or class is allowed in a file]]></description>
+  </rule>
+  <rule key="CFH.Classes.ClassDeclaration.SpaceBeforeKeyword" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassDeclarationSpaceBeforeKeyword</name>
+    <configKey>rulesets/ClassDeclaration</configKey>
+    <description><![CDATA[Expected 0 spaces before %s keyword; %s found]]></description>
+  </rule>
+  <rule key="CFH.Classes.ClassDeclaration.SpacesBeforeKeyword" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassDeclarationSpacesBeforeKeyword</name>
+    <configKey>rulesets/ClassDeclaration</configKey>
+    <description><![CDATA[Expected 1 space between %s and %s keywords; %s found]]></description>
+  </rule>
+  <rule key="CFH.Classes.ClassDeclaration.MissingBrace" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassDeclarationMissingBrace</name>
+    <configKey>rulesets/ClassDeclaration</configKey>
+    <description><![CDATA[Possible parse error: %s missing opening or closing brace]]></description>
+  </rule>
+  <rule key="CFH.Classes.ClassDeclaration.NewLineBeforeCloseBrace" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassDeclarationNewLineBeforeCloseBrace</name>
+    <configKey>rulesets/ClassDeclaration</configKey>
+    <description><![CDATA[Expected 0 spaces before closing brace; newline found]]></description>
+  </rule>
+  <rule key="CFH.Classes.ClassDeclaration.SpaceBeforeCloseBrace" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassDeclarationSpaceBeforeCloseBrace</name>
+    <configKey>rulesets/ClassDeclaration</configKey>
+    <description><![CDATA[Expected 0 spaces before closing brace; %s found]]></description>
+  </rule>
+  <rule key="CFH.Classes.ClassDeclaration.EndFileAfterCloseBrace" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassDeclarationEndFileAfterCloseBrace</name>
+    <configKey>rulesets/ClassDeclaration</configKey>
+    <description><![CDATA[Closing brace of a %s must be followed by a blank line and then a closing PHP tag]]></description>
+  </rule>
+  <rule key="CFH.Classes.ClassDeclaration.NoNewlineAfterCloseBrace" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassDeclarationNoNewlineAfterCloseBrace</name>
+    <configKey>rulesets/ClassDeclaration</configKey>
+    <description><![CDATA[Closing brace of a %s must be followed by a single blank line]]></description>
+  </rule>
+  <rule key="CFH.Classes.ClassDeclaration.NewlinesAfterCloseBrace" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassDeclarationNewlinesAfterCloseBrace</name>
+    <configKey>rulesets/ClassDeclaration</configKey>
+    <description><![CDATA[Closing brace of a %s must be followed by a single blank line; found %s]]></description>
+  </rule>
+  <rule key="CFH.Classes.ClassDeclaration.CloseBraceSameLine" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassDeclarationCloseBraceSameLine</name>
+    <configKey>rulesets/ClassDeclaration</configKey>
+    <description><![CDATA[Closing %s brace must be on a line by itself]]></description>
+  </rule>
+  <rule key="CFH.Classes.ClassDeclaration.SpaceAfterKeyword" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassDeclarationSpaceAfterKeyword</name>
+    <configKey>rulesets/ClassDeclaration</configKey>
+    <description><![CDATA[Expected 1 space between %s keyword and %s name; %s found]]></description>
+  </rule>
+  <rule key="CFH.Classes.ClassDeclaration.SpaceAfterName" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassDeclarationSpaceAfterName</name>
+    <configKey>rulesets/ClassDeclaration</configKey>
+    <description><![CDATA[Expected 1 space after %s name; %s found]]></description>
+  </rule>
+  <rule key="CFH.Classes.ClassDeclaration.NoSpaceBeforeName" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassDeclarationNoSpaceBeforeName</name>
+    <configKey>rulesets/ClassDeclaration</configKey>
+    <description><![CDATA[Expected 1 space before "%s"; 0 found]]></description>
+  </rule>
+  <rule key="CFH.Classes.ClassDeclaration.SpaceBeforeName" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ClassDeclarationSpaceBeforeName</name>
+    <configKey>rulesets/ClassDeclaration</configKey>
+    <description><![CDATA[Expected 1 space before "%s"; %s found]]></description>
+  </rule>
+  <rule key="CFH.Classes.ClassDeclaration.SpaceBeforeComma" priority="MAJOR">
     <category name="Maintainability" />
     <name>ClassDeclarationSpaceBeforeComma</name>
     <configKey>rulesets/ClassDeclaration</configKey>

@@ -9,6 +9,10 @@
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.CodeAnalysis.EmptyStatement.NotAllowed</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Generic.CodeAnalysis.ForLoopShouldBeWhileLoop.CanSimplify</key>
     </rule>
     <rule>
@@ -345,6 +349,38 @@
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.WrongStyle</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.Missing</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.Empty</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.SpacingBeforeShort</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.SpacingAfterShort</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.SpacingBeforeTags</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.EmptyVersion</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.InvalidVersion</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>PEAR.Commenting.FileComment.WrongStyle</key>
     </rule>
     <rule>
@@ -533,6 +569,90 @@
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.WrongStyle</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.Empty</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.SpacingBeforeShort</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.SpacingAfterShort</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.SpacingBeforeTags</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.EmptyThrows</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.MissingReturn</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.EmptyReturn</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.SpacingAfterParams</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.SpacingBeforeParams</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.SpacingBeforeParamType</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.ParameterNamesNotAligned</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.ParameterCommentsNotAligned</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.cod</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.ExtraParamComment</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.MissingParamName</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.MissingParamType</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.MissingParamComment</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.SpacingAfterLongType</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.SpacingAfterLongName</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.MissingParamTag</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>PEAR.Commenting.InlineComment.WrongStyle</key>
     </rule>
     <rule>
@@ -610,6 +730,34 @@
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>PEAR.Functions.FunctionCallSignature.CloseBracketLine</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Functions.FunctionCallSignature.SpaceBeforeOpenBracket</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Functions.FunctionCallSignature.SpaceAfterCloseBracket</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Functions.FunctionCallSignature.SpaceAfterOpenBracket</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Functions.FunctionCallSignature.SpaceBeforeCloseBracket</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Functions.FunctionCallSignature.Indent</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Functions.FunctionCallSignature.ContentAfterOpenBracket</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Functions.FunctionCallSignature.CloseBracketLine</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
@@ -870,6 +1018,66 @@
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Squiz.Classes.ClassDeclaration.SpaceBeforeComma</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Classes.ClassDeclaration.MultipleClasses</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Classes.ClassDeclaration.SpaceBeforeKeyword</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Classes.ClassDeclaration.SpacesBeforeKeyword</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Classes.ClassDeclaration.MissingBrace</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Classes.ClassDeclaration.NewLineBeforeCloseBrace</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Classes.ClassDeclaration.SpaceBeforeCloseBrace</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Classes.ClassDeclaration.EndFileAfterCloseBrace</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Classes.ClassDeclaration.NoNewlineAfterCloseBrace</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Classes.ClassDeclaration.NewlinesAfterCloseBrace</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Classes.ClassDeclaration.CloseBraceSameLine</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Classes.ClassDeclaration.SpaceAfterKeyword</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Classes.ClassDeclaration.SpaceAfterName</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Classes.ClassDeclaration.NoSpaceBeforeName</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Classes.ClassDeclaration.SpaceBeforeName</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Classes.ClassDeclaration.SpaceBeforeComma</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>

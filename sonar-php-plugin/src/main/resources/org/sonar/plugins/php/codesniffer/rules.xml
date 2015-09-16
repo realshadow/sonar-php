@@ -321,7 +321,7 @@
     <configKey>rulesets/NoSilencedErrors</configKey>
     <description><![CDATA[Silencing errors is forbidden]]></description>
   </rule>
-  <rule key="Generic.PHP.NoSilencedErrors.Discouraged" priority="MAJOR">
+  <rule key="Generic.PHP.NoSilencedErrors.Discourafged" priority="MAJOR">
     <category name="Maintainability" />
     <name>NoSilencedErrorsDiscouraged</name>
     <configKey>rulesets/NoSilencedErrors</configKey>
@@ -2676,23 +2676,11 @@
     <configKey>rulesets/VariableComment</configKey>
     <description><![CDATA[There must be exactly one blank line before the tags in variable comment]]></description>
   </rule>
-  <rule key="Squiz.Commenting.VariableComment.TagNotAllowed" priority="MAJOR">
-    <category name="Maintainability" />
-    <name>VariableCommentTagNotAllowed</name>
-    <configKey>rulesets/VariableComment</configKey>
-    <description><![CDATA[@%s tag is not allowed in variable comment]]></description>
-  </rule>
   <rule key="Squiz.Commenting.VariableComment.SpacingAfter" priority="MAJOR">
     <category name="Maintainability" />
     <name>VariableCommentSpacingAfter</name>
     <configKey>rulesets/VariableComment</configKey>
     <description><![CDATA[Additional blank lines found at end of variable comment]]></description>
-  </rule>
-  <rule key="Squiz.Commenting.VariableComment.DuplicateVar" priority="MAJOR">
-    <category name="Maintainability" />
-    <name>VariableCommentDuplicateVar</name>
-    <configKey>rulesets/VariableComment</configKey>
-    <description><![CDATA[Only 1 @var tag is allowed in variable comment]]></description>
   </rule>
   <rule key="Squiz.Commenting.VariableComment.VarOrder" priority="MAJOR">
     <category name="Maintainability" />
@@ -2724,12 +2712,6 @@
     <configKey>rulesets/VariableComment</configKey>
     <description><![CDATA[Missing @var tag in variable comment]]></description>
   </rule>
-  <rule key="Squiz.Commenting.VariableComment.EmptySees" priority="MAJOR">
-    <category name="Maintainability" />
-    <name>VariableCommentEmptySees</name>
-    <configKey>rulesets/VariableComment</configKey>
-    <description><![CDATA[Content missing for @see tag in variable comment]]></description>
-  </rule>
   <rule key="Squiz.Commenting.VariableComment.SeesIndent" priority="MAJOR">
     <category name="Maintainability" />
     <name>VariableCommentSeesIndent</name>
@@ -2737,6 +2719,12 @@
     <description><![CDATA[@see tag indented incorrectly; expected 1 spaces but found %s]]></description>
   </rule>
   <rule key="Squiz.ControlStructures.ElseIfDeclaration.NotAllowed" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ElseIfDeclarationNotAllowed</name>
+    <configKey>rulesets/ElseIfDeclaration</configKey>
+    <description><![CDATA[Usage of ELSEIF not allowed; use ELSE IF instead]]></description>
+  </rule>
+  <rule key="PSR2.ControlStructures.ElseIfDeclaration.NotAllowed" priority="MAJOR">
     <category name="Maintainability" />
     <name>ElseIfDeclarationNotAllowed</name>
     <configKey>rulesets/ElseIfDeclaration</configKey>
@@ -3738,6 +3726,18 @@
     <configKey>rulesets/ObjectOperatorSpacing</configKey>
     <description><![CDATA[Space found after object operator]]></description>
   </rule>
+  <rule key="CFH.WhiteSpace.ObjectOperatorSpacing.Before" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ObjectOperatorSpacingBefore</name>
+    <configKey>rulesets/ObjectOperatorSpacing</configKey>
+    <description><![CDATA[Space found before object operator]]></description>
+  </rule>
+  <rule key="CFH.WhiteSpace.ObjectOperatorSpacing.After" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ObjectOperatorSpacingAfter</name>
+    <configKey>rulesets/ObjectOperatorSpacing</configKey>
+    <description><![CDATA[Space found after object operator]]></description>
+  </rule>
   <rule key="Squiz.WhiteSpace.OperatorSpacing.NoSpaceBeforeAmp" priority="MAJOR">
     <category name="Maintainability" />
     <name>OperatorSpacingNoSpaceBeforeAmp</name>
@@ -3863,6 +3863,72 @@
     <name>ValidVariableNameStringVarNotCamelCaps</name>
     <configKey>rulesets/ValidVariableName</configKey>
     <description><![CDATA[Variable "%s" is not in valid camel caps format]]></description>
+  </rule>
+  <rule key="Squiz.Commenting.VariableComment.Missing" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>VariableCommentMissing</name>
+    <configKey>rulesets/VariableComment</configKey>
+    <description><![CDATA[Missing member variable doc comment]]></description>
+  </rule>
+  <rule key="Squiz.Commenting.VariableComment.WrongStyle" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>VariableCommentWrongStyle</name>
+    <configKey>rulesets/VariableComment</configKey>
+    <description><![CDATA[You must use "/**" style comments for a member variable comment]]></description>
+  </rule>
+  <rule key="Squiz.Commenting.VariableComment.DuplicateVar" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>VariableCommentDuplicateVar</name>
+    <configKey>rulesets/VariableComment</configKey>
+    <description><![CDATA[Only one @var tag is allowed in a member variable comment]]></description>
+  </rule>
+  <rule key="Squiz.Commenting.VariableComment.EmptySees" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>VariableCommentEmptySees</name>
+    <configKey>rulesets/VariableComment</configKey>
+    <description><![CDATA[Content missing for @see tag in member variable comment]]></description>
+  </rule>
+  <rule key="Squiz.Commenting.VariableComment.TagNotAllowed" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>VariableCommentTagNotAllowed</name>
+    <configKey>rulesets/VariableComment</configKey>
+    <description><![CDATA[%s tag is not allowed in member variable comment]]></description>
+  </rule>
+  <rule key="Squiz.Commenting.VariableComment.EmptyVar" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>VariableCommentEmptyVar</name>
+    <configKey>rulesets/VariableComment</configKey>
+    <description><![CDATA[Content missing for @var tag in member variable comment]]></description>
+  </rule>
+  <rule key="CFH.Classes.PropertyDeclaration.VarUsed" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>PropertyDeclarationIncorrectVarUsed</name>
+    <configKey>rulesets/PropertyDeclaration</configKey>
+    <description><![CDATA[The var keyword must not be used to declare a property]]></description>
+  </rule>
+  <rule key="CFH.Classes.PropertyDeclaration.Multiple" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>PropertyDeclarationIncorrectMultiple</name>
+    <configKey>rulesets/PropertyDeclaration</configKey>
+    <description><![CDATA[There must not be more than one property declared per statement]]></description>
+  </rule>
+  <rule key="CFH.Classes.PropertyDeclaration.ScopeMissing" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>PropertyDeclarationScopeMissing</name>
+    <configKey>rulesets/PropertyDeclaration</configKey>
+    <description><![CDATA[Visibility must be declared on property "%s"]]></description>
+  </rule>
+  <rule key="PSR2.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ControlStructuresSpacingAfterOpenBrace</name>
+    <configKey>rulesets/PropertyDeclaration</configKey>
+    <description><![CDATA[Expected %s spaces after opening bracket; %s found]]></description>
+  </rule>
+  <rule key="PSR2.ControlStructures.ControlStructureSpacing.SpaceBeforeCloseBrace" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>ControlStructuresSpacingSpaceBeforeCloseBrace</name>
+    <configKey>rulesets/PropertyDeclaration</configKey>
+    <description><![CDATA[Expected %s spaces before closing bracket; %s found]]></description>
   </rule>
 </rules>
 

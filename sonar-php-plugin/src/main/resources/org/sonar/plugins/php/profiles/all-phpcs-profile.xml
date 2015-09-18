@@ -145,6 +145,14 @@
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>Generic.Functions.OpeningFunctionBraceKernighanRitchie.ContentAfterBrace</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>Generic.Functions.OpeningFunctionBraceKernighanRitchie.SpaceAfterBracket</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Generic.Metrics.CyclomaticComplexity.MaxExceeded</key>
     </rule>
     <rule>
@@ -190,10 +198,6 @@
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Generic.PHP.NoSilencedErrors.Forbidden</key>
-    </rule>
-    <rule>
-      <repositoryKey>php_codesniffer_rules</repositoryKey>
-      <key>Generic.PHP.NoSilencedErrors.Discouraged</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
@@ -405,6 +409,90 @@
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.MissingAuthorTag</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.MissingPackageTag</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.MissingVersionTag</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.EmptyAuthorTag</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.EmptyPackageTag</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.EmptyVersionTag</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.DuplicateAuthorTag</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.DuplicatePackageTag</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.DuplicateVersionTag</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.AuthorTagOrder</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.PackageTagOrder</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.VersionTagOrder</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>Squiz.PHP.DiscouragedFunctions.Discouraged</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>Generic.PHP.NoSilencedErrors.Discouraged</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.InvalidPackage</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.InvalidAuthors</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.InvalidSubPackage</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.CopyrightHyphen</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.InvalidCopyright</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.IncompleteCopyright</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.ClassComment.IncompleteLicense</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>CFH.Commenting.ClassComment.SpacingBeforeShort</key>
     </rule>
     <rule>
@@ -442,6 +530,10 @@
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>PEAR.Commenting.FileComment.WrongStyle</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FileComment.WrongStyle</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
@@ -486,6 +578,10 @@
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>PEAR.Commenting.FileComment.TagIndent</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FileComment.TagIndent</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
@@ -1373,6 +1469,94 @@
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FileComment.MissingTag</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FileComment.Missing</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FileComment.MissingAuthorTag</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FileComment.MissingPackageTag</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FileComment.MissingVersionTag</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FileComment.EmptyVersionTag</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FileComment.DuplicatePackageTag</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FileComment.DuplicateVersionTag</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FileComment.AuthorTagOrder</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FileComment.InvalidSubPackage</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FileComment.InvalidAuthors</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FileComment.IncompleteLicense</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FileComment.IncompleteCopyright</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FileComment.InvalidCopyright</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FileComment.CopyrightHyphen</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FileComment.InvalidPackage</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FileComment.VersionTagOrder</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FileComment.PackageTagOrder</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FileComment.DuplicateAuthorTag</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FileComment.EmptyAuthorTag</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FileComment.EmptyPackageTag</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FileComment.EmptyCopyright</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Squiz.Commenting.FileComment.DuplicateTag</key>
     </rule>
     <rule>
@@ -1489,6 +1673,10 @@
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.SpacingAfter</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Squiz.Commenting.FunctionComment.SeeOrder</key>
     </rule>
     <rule>
@@ -1586,6 +1774,10 @@
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Squiz.Commenting.FunctionComment.TypeHintMissing</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.TypeHintMissing</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>

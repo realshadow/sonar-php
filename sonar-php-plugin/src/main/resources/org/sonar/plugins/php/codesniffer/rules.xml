@@ -2622,9 +2622,21 @@
     <configKey>rulesets/FunctionComment</configKey>
     <description><![CDATA[Function return type "%s" is invalid]]></description>
   </rule>
+  <rule key="CFH.Commenting.FunctionComment.InvalidReturn" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>CFHFunctionCommentInvalidReturn</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[Function return type "%s" is invalid]]></description>
+  </rule>
   <rule key="Squiz.Commenting.FunctionComment.InvalidReturnVoid" priority="MAJOR">
     <category name="Maintainability" />
     <name>FunctionCommentInvalidReturnVoid</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[Function return type is void]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.InvalidReturnVoid" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>CFHFunctionCommentInvalidReturnVoid</name>
     <configKey>rulesets/FunctionComment</configKey>
     <description><![CDATA[Function return type is void]]></description>
   </rule>
@@ -2634,15 +2646,33 @@
     <configKey>rulesets/FunctionComment</configKey>
     <description><![CDATA[Function return type is not void]]></description>
   </rule>
+  <rule key="CFH.Commenting.FunctionComment.InvalidNoReturn" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>CFHFunctionCommentInvalidNoReturn</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[Function return type is not void]]></description>
+  </rule>
   <rule key="Squiz.Commenting.FunctionComment.InvalidReturnNotVoid" priority="MAJOR">
     <category name="Maintainability" />
     <name>FunctionCommentInvalidReturnNotVoid</name>
     <configKey>rulesets/FunctionComment</configKey>
     <description><![CDATA[Function return type is not void]]></description>
   </rule>
+  <rule key="CFH.Commenting.FunctionComment.InvalidReturnNotVoid" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>CFHFunctionCommentInvalidReturnNotVoid</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[Function return type is not void]]></description>
+  </rule>
   <rule key="Squiz.Commenting.FunctionComment.ReturnIndent" priority="MAJOR">
     <category name="Maintainability" />
     <name>FunctionCommentReturnIndent</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[@return tag indented incorrectly; expected 1 space but found %s]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.ReturnIndent" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>CFHFunctionCommentReturnIndent</name>
     <configKey>rulesets/FunctionComment</configKey>
     <description><![CDATA[@return tag indented incorrectly; expected 1 space but found %s]]></description>
   </rule>
@@ -2658,9 +2688,21 @@
     <configKey>rulesets/FunctionComment</configKey>
     <description><![CDATA[@return tag is not required for constructor and destructor]]></description>
   </rule>
+  <rule key="CFH.Commenting.FunctionComment.ReturnNotRequired" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>CFHFunctionCommentReturnNotRequired</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[@return tag is not required for constructor and destructor]]></description>
+  </rule>
   <rule key="Squiz.Commenting.FunctionComment.InvalidThrows" priority="MAJOR">
     <category name="Maintainability" />
     <name>FunctionCommentInvalidThrows</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[Exception type and comment missing for @throws tag in function comment]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.InvalidThrows" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>CFHFunctionCommentInvalidThrows</name>
     <configKey>rulesets/FunctionComment</configKey>
     <description><![CDATA[Exception type and comment missing for @throws tag in function comment]]></description>
   </rule>
@@ -2721,6 +2763,12 @@
   <rule key="Squiz.Commenting.FunctionComment.IncorrectParamVarName" priority="MAJOR">
     <category name="Maintainability" />
     <name>FunctionCommentIncorrectParamVarName</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[Expected "%s"; found "%s" for %s at position %s]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.IncorrectParamVarName" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>CFHFunctionCommentIncorrectParamVarName</name>
     <configKey>rulesets/FunctionComment</configKey>
     <description><![CDATA[Expected "%s"; found "%s" for %s at position %s]]></description>
   </rule>

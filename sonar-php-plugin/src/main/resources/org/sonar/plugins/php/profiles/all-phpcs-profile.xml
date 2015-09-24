@@ -1705,7 +1705,15 @@
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.InvalidReturn</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Squiz.Commenting.FunctionComment.InvalidReturnVoid</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.InvalidReturnVoid</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
@@ -1713,11 +1721,23 @@
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.InvalidNoReturn</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Squiz.Commenting.FunctionComment.InvalidReturnNotVoid</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.InvalidReturnNotVoid</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Squiz.Commenting.FunctionComment.ReturnIndent</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.ReturnIndent</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
@@ -1729,7 +1749,15 @@
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.ReturnNotRequired</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Squiz.Commenting.FunctionComment.InvalidThrows</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.InvalidThrows</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
@@ -1770,6 +1798,10 @@
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Squiz.Commenting.FunctionComment.IncorrectParamVarName</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.IncorrectParamVarName</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>

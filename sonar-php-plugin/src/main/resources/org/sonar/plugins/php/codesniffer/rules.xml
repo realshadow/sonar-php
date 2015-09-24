@@ -571,6 +571,12 @@
     <configKey>rulesets/ClassDeclaration</configKey>
     <description><![CDATA[Possible parse error: %s missing opening or closing brace]]></description>
   </rule>
+  <rule key="CFH.Classes.ClassDeclaration.BraceOnNewLine" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>CFHClassDeclarationMissingBrace</name>
+    <configKey>rulesets/ClassDeclaration</configKey>
+    <description><![CDATA[Opening brace should be on the same line as the declaration]]></description>
+  </rule>
   <rule key="PEAR.Classes.ClassDeclaration.OpenBraceNewLine" priority="MAJOR">
     <category name="Maintainability" />
     <name>ClassDeclarationOpenBraceNewLine</name>
@@ -856,6 +862,18 @@
     <category name="Maintainability" />
     <name>CFHFileCommentVersionTagOrder</name>
     <configKey>rulesets/FileCommentVersionTagOrder</configKey>
+    <description><![CDATA[The tag in position %s should be the %s tag]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FileComment.LicenseTagOrder" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>CFHFileCommentLicenseTagOrder</name>
+    <configKey>rulesets/FileCommentLicenseTagOrder</configKey>
+    <description><![CDATA[The tag in position %s should be the %s tag]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FileComment.LinkTagOrder" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>CFHFileCommentLinkTagOrder</name>
+    <configKey>rulesets/FileCommentLinkTagOrder</configKey>
     <description><![CDATA[The tag in position %s should be the %s tag]]></description>
   </rule>
   <rule key="CFH.Commenting.FileComment.InvalidPackage" priority="MAJOR">
@@ -2628,6 +2646,18 @@
     <configKey>rulesets/FunctionComment</configKey>
     <description><![CDATA[Function return type "%s" is invalid]]></description>
   </rule>
+  <rule key="CFH.Commenting.FunctionComment.SpacingAfterParamName" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>CFHFunctionCommentSpacingAfterParamName</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[Expected %s spaces after parameter name; %s found]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.SpacingAfterParamType" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>CFHFunctionCommentSpacingAfterParamType</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[Expected %s spaces after parameter type; %s found]]></description>
+  </rule>
   <rule key="Squiz.Commenting.FunctionComment.InvalidReturnVoid" priority="MAJOR">
     <category name="Maintainability" />
     <name>FunctionCommentInvalidReturnVoid</name>
@@ -2790,9 +2820,21 @@
     <configKey>rulesets/FunctionComment</configKey>
     <description><![CDATA[Expected type hint "%s"; found "%s" for %s at position %s]]></description>
   </rule>
+  <rule key="CFH.Commenting.FunctionComment.IncorrectTypeHint" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>CFHFunctionCommentIncorrectTypeHint</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[Expected type hint "%s"; found "%s" for %s at position %s]]></description>
+  </rule>
   <rule key="Squiz.Commenting.FunctionComment.InvalidTypeHint" priority="MAJOR">
     <category name="Maintainability" />
     <name>FunctionCommentInvalidTypeHint</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[Unknown type hint "%s" found for %s at position %s]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.InvalidTypeHint" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>CFHFunctionCommentInvalidTypeHint</name>
     <configKey>rulesets/FunctionComment</configKey>
     <description><![CDATA[Unknown type hint "%s" found for %s at position %s]]></description>
   </rule>

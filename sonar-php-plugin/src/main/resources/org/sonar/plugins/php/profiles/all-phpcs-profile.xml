@@ -137,6 +137,10 @@
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Classes.ClassDeclaration.BraceOnNewLine</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Generic.Functions.OpeningFunctionBraceKernighanRitchie.BraceOnNewLine</key>
     </rule>
     <rule>
@@ -1817,7 +1821,31 @@
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.IncorrectTypeHint</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FileComment.LinkTagOrder</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FileComment.LicenseTagOrder</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.SpacingAfterParamType</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Squiz.Commenting.FunctionComment.InvalidTypeHint</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.InvalidTypeHint</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.SpacingAfterParamName</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>

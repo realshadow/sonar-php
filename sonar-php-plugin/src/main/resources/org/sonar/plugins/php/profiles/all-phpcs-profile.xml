@@ -2769,6 +2769,10 @@
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>PSR2.Files.ClosingTag.NotAllowed</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Zend.NamingConventions.ValidVariableName.NotCamelCaps</key>
     </rule>
     <rule>

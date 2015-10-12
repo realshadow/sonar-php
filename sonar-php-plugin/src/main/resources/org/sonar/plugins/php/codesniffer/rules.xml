@@ -345,7 +345,7 @@
     <configKey>rulesets/NoSilencedErrors</configKey>
     <description><![CDATA[Silencing errors is forbidden]]></description>
   </rule>
-  <rule key="Generic.PHP.NoSilencedErrors.Discourafged" priority="MAJOR">
+  <rule key="Generic.PHP.NoSilencedErrors.Discouraged" priority="MAJOR">
     <category name="Maintainability" />
     <name>NoSilencedErrorsDiscouraged</name>
     <configKey>rulesets/NoSilencedErrors</configKey>
@@ -4215,6 +4215,12 @@
   <rule key="Zend.Files.ClosingTag.NotAllowed" priority="MAJOR">
     <category name="Maintainability" />
     <name>ClosingTagNotAllowed</name>
+    <configKey>rulesets/ClosingTag</configKey>
+    <description><![CDATA[A closing tag is not permitted at the end of a PHP file]]></description>
+  </rule>
+  <rule key="PSR2.Files.ClosingTag.NotAllowed" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>PSR2ClosingTagNotAllowed</name>
     <configKey>rulesets/ClosingTag</configKey>
     <description><![CDATA[A closing tag is not permitted at the end of a PHP file]]></description>
   </rule>

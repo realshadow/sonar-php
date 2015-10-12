@@ -25,6 +25,10 @@
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.ControlStructures.ControlSignature.OpenBraceOnNewLine</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Generic.Metrics.CyclomaticComplexity.TooHigh</key>
     </rule>
     <rule>
@@ -1694,6 +1698,10 @@
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>
       <key>Squiz.Commenting.FunctionComment.DuplicateReturn</key>
+    </rule>
+    <rule>
+      <repositoryKey>php_codesniffer_rules</repositoryKey>
+      <key>CFH.Commenting.FunctionComment.DuplicateReturn</key>
     </rule>
     <rule>
       <repositoryKey>php_codesniffer_rules</repositoryKey>

@@ -1446,6 +1446,12 @@
     <configKey>rulesets/ControlSignature</configKey>
     <description><![CDATA[Incorrect control signature]]></description>
   </rule>
+  <rule key="CFH.ControlStructures.ControlSignature.OpenBraceOnNewLine" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>CFHControlStructuresControlSignatureOpenBraceOnNewLine</name>
+    <configKey>rulesets/ControlSignature</configKey>
+    <description><![CDATA[Opening braces for control structures must go on the same line]]></description>
+  </rule>
   <rule key="PEAR.ControlStructures.MultiLineCondition.Alignment" priority="MAJOR">
     <category name="Maintainability" />
     <name>MultiLineConditionAlignment</name>
@@ -2619,6 +2625,12 @@
   <rule key="Squiz.Commenting.FunctionComment.DuplicateReturn" priority="MAJOR">
     <category name="Maintainability" />
     <name>FunctionCommentDuplicateReturn</name>
+    <configKey>rulesets/FunctionComment</configKey>
+    <description><![CDATA[Only 1 @return tag is allowed in function comment]]></description>
+  </rule>
+  <rule key="CFH.Commenting.FunctionComment.DuplicateReturn" priority="MAJOR">
+    <category name="Maintainability" />
+    <name>CFHFunctionCommentDuplicateReturn</name>
     <configKey>rulesets/FunctionComment</configKey>
     <description><![CDATA[Only 1 @return tag is allowed in function comment]]></description>
   </rule>
